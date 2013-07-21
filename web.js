@@ -5,9 +5,9 @@ app.use(express.logger());
 
 app.get('/', function(request, response) {
   var test = new Buffer(fs.readFileSync("index.html"),"utf-8");
-//  var test2 = "This is a test";
-//  response.send(test2);
-  response.send(test.toString("utf-8");
+  var test2 = "This is a test";
+  response.send(test2);
+//  response.send(test.toString("utf-8");
 });
 
 /*
